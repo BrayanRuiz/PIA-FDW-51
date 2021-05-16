@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/abdf98a5ec.js" crossorigin="anonymous"></script>
+    <title>ABMODEL D & I - Productos</title>
+  </head>
+  <body>
+    <!--Inicio Cabecera-->
+    <header>
+      <nav class="navbar">
+        <a href="/admin/" class="loginadmin"><i class="fas fa-user-cog"></i>Iniciar Sesion</a>
+        <div class="content">
+          <div class="logo">
+            <a href="{% url 'index' %}"><img class="img-logo" src="{% static 'Recursos/logo-principal.png' %}"/></a>
+          </div>
+          <ul class="menu">
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'productos' %}">Productos</a></li>
+            <li><a href="{% url 'promociones' %}">Promociones</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--Fin Cabecera-->
+
+    <section class="decoracion">
+      <div class="productosI">
+        <img src="{% static 'Recursos/producto1.png' %}">
+        <h2>Estanteria #1</h2>
+        <strong>$13 usd</strong>
+        <dl>
+          <dt>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            unde dolores, illum aut omnis minus mollitia sunt nesciunt
+            perspiciatis architecto veniam earum quisquam, at ullam ducimus optio
+            quia quasi tempore!
+          </dt>
+        </dl>
+        <div class="btn btn1">
+          <div class="inner"></div>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="productosD">
+        <img src="{% static 'Recursos/producto2.png' %}">
+        <h2>Locker #1</h2>
+        <strong>$20 usd</strong>
+        <dl>
+          <dt>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            unde dolores, illum aut omnis minus mollitia sunt nesciunt
+            perspiciatis architecto veniam earum quisquam, at ullam ducimus optio
+            quia quasi tempore!
+          </dt>
+        </dl>
+        <div class="btn btn1">
+          <div class="inner"></div>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="productosI">
+        <img src="{% static 'Recursos/producto3.png' %}">
+        <h2>Caja Plástica #1</h2>
+        <strong>$5 usd</strong>
+        <dl>
+          <dt>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            unde dolores, illum aut omnis minus mollitia sunt nesciunt
+            perspiciatis architecto veniam earum quisquam, at ullam ducimus optio
+            quia quasi tempore!
+          </dt>
+        </dl>
+        <div class="btn btn1">
+          <div class="inner"></div>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="productosD">
+        <img src="{% static 'Recursos/producto4.png' %}">
+        <h2>Silla de Oficina #1</h2>
+        <strong>$50 usd</strong>
+        <dl>
+          <dt>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            unde dolores, illum aut omnis minus mollitia sunt nesciunt
+            perspiciatis architecto veniam earum quisquam, at ullam ducimus optio
+            quia quasi tempore!
+          </dt>
+        </dl>
+        <div class="btn btn1">
+          <div class="inner"></div>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="productosI">
+        <img src="{% static 'Recursos/producto5.png' %}">
+        <h2>Escritorio de Oficina #1</h2>
+        <strong>$60 usd</strong>
+        <dl>
+          <dt>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            unde dolores, illum aut omnis minus mollitia sunt nesciunt
+            perspiciatis architecto veniam earum quisquam, at ullam ducimus optio
+            quia quasi tempore!
+          </dt>
+        </dl>
+        <div class="btn btn1">
+          <div class="inner"></div>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <hr>
+
+    <div>
+      <a href="#" class="scroll-top">
+        <span class="fa fa-angle-up"></span>
+      </a>
+	  </div>
+
+    <footer>
+      - ABMODEL Home & Interiors México. - Todos los derechos reservados &copy;
+      {% now "d/m/Y" %}
+    </footer>
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
