@@ -1,13 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+}
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+}
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 150px;
+    padding: 12px 0;
     background: #1b1b1b;
+    transition: all 0.3s ease;
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu{
+    display: inline-flex;
+}
+.navbar .img-logo{
+    position: absolute;
+    width: 300px;
+    height: 130px;
+    left: 65px;
+    top: 5px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 140px;
+    margin-left: 90px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.menu li a:after{
+    position: absolute;
+	content: '';
+	left: 0;
+	bottom: -5px;
+	height: 3px;
+	width: 100%;
+	background: #005952;
+	opacity: 0;
+	transition: all .2s linear;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.4s linear;
+}
+.menu li a:hover:after{
+	opacity: 1;
+	bottom: -2px;
+	transform: scaleX(1);
+	transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.menu li a:hover{
+    color: #5CC5B5;
+}
+.clearfix{
+  float: none;
+  clear: both;
+}
+.loginadmin{
+    float: right;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 7px;
+    margin: 2px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.loginadmin i{
+    margin-right: 10px;
+    font-size: 16px;
     color: white;
 }
-
-body{
-    width: 80%;
-    margin: 0 auto;
+footer{
+  width: 100%;
+  height: 60px;
+  line-height: 40px;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 50px;
+  background: #1b1b1b;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
 }
