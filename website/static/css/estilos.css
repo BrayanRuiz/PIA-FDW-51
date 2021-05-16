@@ -289,3 +289,132 @@ footer{
     display: block;
     margin: 20px auto;
 }
+
+/* Contacto */
+
+#contacto{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 40px auto;
+    border: 1px solid transparent;
+    box-shadow: 0 0 42px 1px rgba(0,0,0,.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+#contacto h2{
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#contacto label{
+    display: block;
+    margin-top: 15px auto;
+    width: 100%;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+select,
+textarea{
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    width: 90%;
+    margin-bottom: 10px;
+}
+form input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    background: #1b1b1b;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+form input[type="submit"]:hover{
+    font-size: 16px;
+    border: 2px solid white;
+    transition: all 0.4s ease;
+}
+
+.redes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.redes li{
+    position: relative;
+    background: white;
+    width: 90px;
+    height: 90px;
+    margin: 0 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+}
+.redes li .fab{
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+.redes li:nth-child(1){
+    border-color: #38A1F3;
+}
+.redes li:nth-child(1) .fab{
+    color: #38A1F3;
+}
+.redes li:nth-child(2){
+    border-color: #d72888;
+}
+.redes li:nth-child(2) .fab{
+    color: #d72888;
+}
+.redes li:nth-child(3){
+    border-color: #0077B5;
+}
+.redes li:nth-child(3) .fab{
+    color: #0077B5;
+}
+.redes li:nth-child(4){
+    border-color: #eb1c14;
+}
+.redes li:nth-child(4) .fab{
+    color: #eb1c14;
+}
+.redes li:hover:nth-child(1){
+    background: #38A1F3;
+}
+.redes li:hover:nth-child(2){
+    background: #d72888;
+}
+.redes li:hover:nth-child(3){
+    background: #0077B5;
+}
+.redes li:hover:nth-child(4){
+    background: #eb1c14;
+}
+.redes li .fab:nth-child(1){
+    left: -50%;
+    opacity: 0;
+}
+.redes li:hover .fab:nth-child(1){
+    left: 50%;
+    opacity: 1;
+    color: white;
+}
+.redes li:hover .fab:nth-child(2){
+    left: 150%;
+    opacity: 0;
+}
