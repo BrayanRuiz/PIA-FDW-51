@@ -105,3 +105,95 @@ footer{
   color: white;
   font-size: 12px;
 }
+.scroll-top{
+	position: fixed;
+	right: 10px;
+	bottom: 25px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	border-radius: 4px;
+	text-align: center;
+	z-index: 100;
+	box-sizing: content-box;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease-in-out;
+}
+.scroll-top > span{
+	line-height: inherit;
+	vertical-align: top;
+}
+
+/* Inicio */
+
+#slider{
+    overflow: hidden;
+    padding-top: 160px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    height: 300px;
+    float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.video{
+    display: flex;
+    float: right;
+    width: 40%;
+    height: 100%;
+    margin: 45px;
+    padding: 20px;
+    border: 2px solid #5CC5B5;
+}
+.video iframe{
+    width: 0px auto;
+}
+.presentacion{
+    display: flex;
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin: 45px;
+    border: 2px solid #5CC5B5;
+    padding: 20px;
+}
