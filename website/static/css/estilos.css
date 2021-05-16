@@ -197,3 +197,95 @@ footer{
     border: 2px solid #5CC5B5;
     padding: 20px;
 }
+.presentacion h1{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+.presentacion p{
+    margin-left: 20px;
+}
+
+/* Productos */
+.decoracion{
+    width: 100%;
+    padding: 180px 50px 50px 50px;
+  }
+.productosI{
+    display: block;
+    float: left;
+    width: 40%;
+    background: white;
+    border: 2px solid #5CC5B5;
+    padding: 30px;
+    margin: 30px;
+}
+.productosD{
+    display: block;
+    float: right;
+    width: 40%;
+    background: white;
+    border: 2px solid #5CC5B5;
+    padding: 30px;
+    margin: 30px;
+}
+.decoracion img{
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.btn{
+    position: relative;
+    display: inline-flex;
+    float: right;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 17px 20px;
+    overflow: hidden;
+    transition: all .4s;
+}
+.btn .inner{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.03);
+}
+.btn:hover .inner{
+    left: 0;
+}
+.btn1 .inner{
+    background: -webkit-linear-gradient(right, #43cea2,#185a9d,#43cea2,#185a9d);
+}
+
+/* Promociones */
+.contenedor{
+    width: 100%;
+    padding-top: 160px !important;
+    padding: 100px 50px 50px 50px;
+}
+.contenedor .img-promo{
+    padding: 20px;
+}
+.contenedor img{
+    display: block;
+    margin: 20px auto;
+}
