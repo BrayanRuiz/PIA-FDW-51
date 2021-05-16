@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/abdf98a5ec.js" crossorigin="anonymous"></script>
+    <title>ABMODEL D & I - Contacto</title>
+  </head>
+  <body>
+    <!--Inicio Cabecera-->
+
+    <nav class="navbar">
+      <a href="/admin/" class="loginadmin"><i class="fas fa-user-cog"></i>Iniciar Sesion</a>
+      <div class="content">
+        <div class="logo">
+          <a href="{% url 'index' %}"><img class="img-logo" src="{% static 'Recursos/logo-principal.png' %}"/></a>
+        </div>
+        <ul class="menu">
+          <li><a href="{% url 'index' %}">Inicio</a></li>
+          <li><a href="{% url 'productos' %}">Productos</a></li>
+          <li><a href="{% url 'promociones' %}">Promociones</a></li>
+          <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Fin Cabecera-->
+
+    <div class="contenedor">
+      <ul class="redes">
+        <li>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram"></i>
+        </li>
+        <li>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </li>
+        <li>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-youtube"></i>
+        </li>
+      </ul>
+
+      <form action="" method="POST" id="contacto">
+        <h2>CONTACTO</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" data-validation="alphanumeric">
+
+        <br>
+        <label for="surname">Apellidos:</label>
+        <input type="text" name="surname" data-validation="alphanumeric">
+
+        <br>
+
+        <label>Email:</label>
+        <input type="email" name="email" data-validation="required email">
+
+        <br>
+        <label for="sex">Sexo:</label>
+
+        <select name="sex" data-validation="required">
+            <option value="men">Hombre</option>
+            <option value="woman">Mujer</option>
+        </select>
+
+        <br>
+        <label for="date">Fecha de Nacimiento:</label>
+        <input type="text" name="date" data-validation="date" data-validation-format="dd/mm/yyyy">
+
+        <br>
+        <label for="years">Edad:</label>
+        <input type="number" name="years" data-validation="required number">
+
+        <br>
+        <label for="text-area">Descripción del asunto:</label>
+        <br>
+        <textarea id="texto" cols="30" rows="10" data-validation="required alphanumeric"></textarea>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <div class="clearfix"></div>
+      </form>
+
+    </div>
+
+    <hr>
+
+    <div>
+      <a href="#" class="scroll-top">
+        <span class="fa fa-angle-up"></span>
+      </a>
+	  </div>
+
+    <footer>
+      - ABMODEL Home & Interiors México. - Todos los derechos reservados &copy;
+      {% now "d/m/Y" %}
+    </footer>
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
